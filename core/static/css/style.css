@@ -1,0 +1,22 @@
+#menu a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    }
+
+body {
+    background-image: url(./img/fondo1.jpg);
+    font-family: 'Roboto', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer{
+    background: #000000;
+     min-height: 50px;
+}
+    
+footer p{
+    color: white;
+    text-align: center;
+}

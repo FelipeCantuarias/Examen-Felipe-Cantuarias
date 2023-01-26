@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modificar</title>
+    {% load static %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/api.css' %}" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 offset-md-3"></div>
+                <div class="card">
+                     <div class="card-body">
+                        <center><h2>Modificar Cliente</h2></center>
+
+                        <form method="POST" action="#" id="formulario">
+                            {% csrf_token %}
+            
+                            <div class="form-group">
+                                {{ form.rut.label}}
+                                {{ form.rut}}
+                            </div>
+                            
+                            <div class="form-group">
+                                {{ form.nombre.label}}
+                                {{ form.nombre}}
+                            </div>
+                            
+                            <div class="form-group">
+                                {{ form.apellido.label}}
+                                {{ form.apellido}}
+                            </div>
+                         
+                            <div class="form-group">
+                                {{ form.genero.label}}
+                                {{ form.genero}}
+                            </div>
+                            <br>                  
+                            <center> <input type="submit" class="btn btn-primary" value="Modificar">
+                            <br><br>
+                            <a href="{% url 'mostrar' %}" class="btn btn-success">Volver atras</a></center>
+                        </form>
+                     </div>
+                </div>
+        </div>
+    </div>
+
+    <footer class="w-100 d-flex aling-items justify-content-center flex-wrap">
+        <p class="fs-5 px-3 pt-3"> GalleryART &copy; Todos los derechos Reservados 2023</p>
+        <div id="iconos">
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-twitter"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+        </div>
+    </footer>
+
+</body>
+
+    <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/validacion.js' %}"></script>
+
+</html>

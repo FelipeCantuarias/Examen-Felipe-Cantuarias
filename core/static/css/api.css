@@ -1,0 +1,41 @@
+body{
+    background-image: url(./fondo7.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#menu a {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    }
+
+span1{
+    color: rgb(191, 0, 255);
+}
+
+span3{
+    color: rgb(8, 29, 33);
+}
+
+footer{
+    background: #000000;
+    min-height: 50px;
+}
+
+footer p{
+    color: white;
+    text-align: center;
+}
+
+
+#iconos i{
+    font-size: 26px;
+    padding: o 8px;
+    color: white;
+}
+
+h1{
+    text-align: center;
+}

@@ -1,0 +1,106 @@
+#menu a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #1f1d1d;
+    }
+
+.brand img{
+    height: 75px;
+    width: 100px;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(./fondo3.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    letter-spacing: 0.03;
+    line-height: 1.6;
+}
+
+footer{
+    background: #000000;
+    min-height: 30px;
+}
+
+footer p{
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+span {
+    color: #0033ff;
+}
+
+span1 {
+    color: rgb(255, 0, 0);
+}
+
+#iconos i{
+    font-size: 26px;
+    padding: o 8px;
+    color: white;
+}
+
+title{
+    text-align: center;
+    font-size: 40px;
+    color: black;
+    margin-top: 100px;
+    font-weight: 100;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.container .card{
+    width: 338px;
+    height: 290px;
+    border-radius: 1px;
+    box-shadow: 0 2px 2px rgb(0, 0, 2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.container .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 25px 25px rgb(1, 244, 147);
+    
+}
+
+.container .card img{
+    width: 340px;
+    height: 210px;
+}
+
+.container .card h4{
+    font-weight: 600;
+}
+
+.container .card p {
+    padding: 0 1rem;
+    font-size: 20px;
+    font-weight: 350;
+}
+

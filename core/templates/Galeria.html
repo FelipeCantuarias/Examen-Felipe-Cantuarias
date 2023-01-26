@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    {% load static %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="{% static './css/bootstrap.min.css' %}"/>
+    <link rel="stylesheet" href="{% static './css/galeria.css' %}">
+    <!-- CSS only -->
+    
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+
+      <header class="container-fluid bg-black d-flex justify-content-center">
+          <p class="text-light mb-0 p-2 fs-5">Contactanos al +56 9 56098732</p>
+          <p class="text-light mb-0 p-2 fs-5">Nuestro Correo: GalleryART@Gmail.com</p>         
+      </header>
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent" id="menu">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+              <span class="text-warning fs-5 fwbold">GalleryART</span>
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Página Principal</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'somos' %}">Conócenos</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'galeria' %}">Cuadros/Pinturas</a>
+              </li>  
+
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'conta' %}">Contáctanos</a>
+                </li> 
+
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'api' %}">ApiRest</a>
+                </li> 
+
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'mostrar' %}">Clientes/Artes</a>
+                </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+              
+             <h1><span class="text">Cuadros</span>/<span1 class="text">Pinturas</span1></h1>
+
+       
+    <div class="container">
+
+      <div class="card">
+           <img src="{% static './img/cuadro1.jpg' %}">
+           <h4>La noche estrellada</h4>
+           <p>Autor: Vincent Van Gogh</p> 
+      </div>
+
+      <div class="card">
+          <img src="{% static './img/pintura3.jpg' %}">
+          <h4>El viejo guitarrista ciego</h4>
+          <p>Autor: Pablo Picasso</p> 
+      </div>
+
+       <div class="card">
+          <img src="{% static './img/panzer.jpg' %}">
+          <h4>Panzers de la muerte</h4>
+          <p>Autor: Ernest Descals</p> 
+       </div>
+
+       <div class="card">
+          <img src="{% static './img/race.jpg' %}">
+          <h4>Los Toros de las Pampas</h4>
+          <p>Autor: Rafael Varela</p> 
+       </div>
+
+       <div class="card">
+          <img src="{% static './img/midway1.jpg' %}">
+          <h4>La batalla de Midway</h4>
+          <p>Autor: Kenichi Nakamura</p> 
+      </div>
+
+      <div class="card">
+          <img src="{% static './img/pinturagato.jpg' %}">
+          <h4>Un gato en Shambhala</h4>
+          <p>Autor: Vincent Van Gogh</p> 
+       </div>
+
+       <div class="card">
+         <img src="{% static './img/PinturaDeHavilland.jpg' %}">
+         <h4>Vickers F.B.5</h4>
+         <p>Autor: Adel Vallespin</p> 
+        </div> 
+
+        <div class="card">
+         <img src="{% static './img/braco.jpg' %}">
+         <h4>Barco de pesca</h4>
+         <p>Autor: Jacques Villares</p> 
+        </div> 
+
+        <div class="card">
+         <img src="{% static './img/kurks.jpg' %}">
+         <h4>Kurks 1943</h4>
+         <p>Autor: Alexander Pavlenko </p> 
+        </div> 
+            
+           
+          <footer class="w-100 d-flex aling-items justify-content-center flex-wrap">
+             <p class="fs-5 px-3 pt-3"> GalleryART &copy; Todos los derechos Reservados 2023</p>
+             <div id="iconos">
+             <a href=""><i class="bi bi-facebook"></i></a>
+             <a href=""><i class="bi bi-twitter"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+           </div>
+          </footer>
+        </div> 
+
+            
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="{% static './js/bootstrap.min.js' %}"></script>
+</body>
